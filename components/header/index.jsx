@@ -6,7 +6,7 @@ const Header = () => {
     return <div className={Styles.container}>
         <div className={Styles.logotipo}>
             <Image
-                alt="logo agencia"
+                alt="Logo"
                 width={150}
                 height={150}
                 src="./images/logo.svg" />
