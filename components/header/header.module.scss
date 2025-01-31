@@ -1,0 +1,30 @@
+@import "./styles/mixins/colors.scss";
+@import "./styles/mixins/fonts.scss";
+
+.container {
+    padding: 34px 188px;
+    width: 100%;
+    background-color: $blue-color;
+    border-bottom: 0.5px solid $grey-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    a+a{
+        margin-left: 38.9;
+    }
+    color: white;
+    font-family: $fonte-padrao;
+}
+
+.button{
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $fonte-padrao;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
