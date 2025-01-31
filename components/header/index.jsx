@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Styles from "./header.module.scss"
+import Button from "../button";
 
 const Header = () => {
     return <div className={Styles.container}>
@@ -23,7 +24,7 @@ const Header = () => {
             </Link>
         </div>
         <div className={Styles.action}>
-            <button className={Styles.button}>Fale Conosco</button>
+        <Button title={"Fale Conosco"} kind={"primary"}></Button>
         </div>
     </div>
 }
