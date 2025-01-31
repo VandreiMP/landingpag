@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./mixins/colors.scss";
+
+
+body{
+  color: $white-color;
+  background-color: $purple-color;
+
+}
 
 a{
   color: inherit;

@@ -1,15 +1,22 @@
 @import "./styles/mixins/colors.scss";
 @import "./styles/mixins/fonts.scss";
+@import "./styles/mixins/padding.scss";
 
 .container {
-    padding: 34px 188px;
+    @include Padding; //Mixin
+    padding-top: 34px; 
+    padding-bottom: 34px;
     width: 100%;
-    background-color: $blue-color;
+    background-color: $purple-color; //Variável
     border-bottom: 0.5px solid $grey-color;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
+}
+
+.action{
+    justify-content: end;
 }
 
 .menu{

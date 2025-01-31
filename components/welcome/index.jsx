@@ -1,5 +1,6 @@
 import Styles from "./welcome.module.scss";
-import Button from "../button"
+import Image from "next/image";
+import Button from "../button";
 
 const Welcome = () => {
     return <div className={Styles.container}>
@@ -10,7 +11,14 @@ const Welcome = () => {
             </p>
             <Button title={"Aumentar Vendas"} kind={"secundary"}></Button>
         </div>
-        <div className={Styles.image}></div>
+        <div className={Styles.image}>
+        <Image
+            width={700}
+            height={700}
+                alt="Banner Welcome"
+                src="./images/leads.svg">
+            </Image>
+        </div>
     </div>
 }
 
